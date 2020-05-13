@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal"
+    android:background="#bbdefb"
+    android:padding="5dp"
+    >
+    <ImageView
+        android:id="@+id/imgRecibo_Lista"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:background="#1976d2"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f5f5f5"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:id="@+id/txtTituloRecibo_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Producto de facturado"
+            android:layout_marginBottom="8dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_below="@+id/txtTituloRecibo_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vence:"
+            android:layout_marginBottom="6dp"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:id="@+id/txtDiaPago_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTituloRecibo_List"
+            android:layout_toEndOf="@+id/txt_1"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="6dp"
+            android:text="05/05/2020"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/txtEstadoRecibo_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_1"
+            android:text="Pendiente"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:id="@+id/txtValorRecibo_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:textSize="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txtEstadoRecibo_List"
+            android:textStyle="bold"
+            android:text="S/1500.00"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
